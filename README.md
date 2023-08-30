@@ -1,5 +1,4 @@
-# API_for_TodoList
-API для Todo List
+# API для Todo List
 
 Кожне завдання повинно мати такі властивості:
 - status (todo, done)
