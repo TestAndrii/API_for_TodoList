@@ -17,7 +17,7 @@ class TodoSeeder extends Seeder
             'done' => false,
             'priority' => rand(1,5),
             'title' => Str::random(10),
-            'subtask' => 0
+            'subtask' => 0,
             'user_id' => rand(1,10)
         ]);
     }

@@ -32,7 +32,6 @@ class TodoController extends Controller
     public function store(Request $request)
     {
         $store_todo = Todo::saved($request->all());
-dd($store_todo);
 //        return new TodoResource($created_todo);
     }
 
