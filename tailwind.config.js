@@ -9,6 +9,10 @@ export default {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+
+        // Example content paths...
+        './public/**/*.html',
+        './src/**/*.{js,jsx,ts,tsx,vue}',
     ],
 
     theme: {
@@ -20,4 +24,10 @@ export default {
     },
 
     plugins: [forms, typography],
+    darkMode: false, // or 'media' or 'class' Oor 'media'
+    variants: {
+        extend: {
+            padding: ['hover'],
+        },
+    },
 };

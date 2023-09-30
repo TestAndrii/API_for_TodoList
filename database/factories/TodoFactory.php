@@ -18,7 +18,7 @@ class TodoFactory extends Factory
     public function definition(): array
     {
         return [
-            'done' => rand(0,1),
+            'status' => rand(0,1),
             'priority' => rand(1,5),
             'title' => Str::random(10),
             'createdAt' => now(),

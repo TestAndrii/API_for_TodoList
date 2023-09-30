@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
-            $table->boolean('done')->default(false)->comment('status');
+            $table->boolean('status')->default(false)->comment('status');
             $table->integer('priority')->default(1)->comment('priority (1-5)');
             $table->string('title')->default('заголовок задачі')->comment('заголовок задачі');
             $table->dateTime('createdAt')->default(now())->comment('дата створення');

@@ -14,7 +14,7 @@ class TodoSeeder extends Seeder
     public function run(): void
     {
         DB::table('todos')->insert([
-            'done' => false,
+            'status' => false,
             'priority' => rand(1,5),
             'title' => Str::random(10),
             'subtask' => 0,
